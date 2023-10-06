@@ -1,13 +1,13 @@
 from distutils.core import setup
 setup(
   name = 'daytrader',         # How you named your package folder (MyLib)
-  packages = ['algotrading'],   # Chose the same as "name"
+  packages = ['daytrader'],   # Chose the same as "name"
   version = '1.013',      # Start with a small number and increase it with every change you make
   license='MIT',        # Chose a license from here: https://help.github.com/articles/licensing-a-repository
   description = '',   # Give a short description about your library
-  author = 'algotrader',                   # Type in your name
-  author_email = 'hyperamabanyiyen@gmail.com',      # Type in your E-Mail
-  url = 'https://github.com/hyper1923/hcfg',   # Provide either the link to your github or to your website
+  author = 'daytrader',                   # Type in your name
+  author_email = 'contact@egely1337.com',      # Type in your E-Mail
+  url = 'https://github.com/algoritmicworks/daytrader/',   # Provide either the link to your github or to your website
   download_url = 'https://github.com/hyper1923/hcfg/releases/download/sourcecode/hcfg.tar.gz',    # I explain this later on
   keywords = ['crypto', 'trading', "indicator"],   # Keywords that define your package best
   install_requires=[],
