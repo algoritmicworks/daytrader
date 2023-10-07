@@ -15,31 +15,19 @@ def print_values_for_a_coin(trader: Daytrader, token_name: str, interval: Interv
 def main():
     daytrader = Daytrader(access_token="1337") # create a instance of class Daytrader and put access_token to the class which we gave
 
-    print_values_for_a_coin(
-        trader=daytrader,
-        token_name="BTCUSDT",
-        interval=Intervals.DAY
-    )
-    print_values_for_a_coin(
-        trader=daytrader,
-        token_name="LUNAUSDT",
-        interval=Intervals.DAY
-    )
-    print_values_for_a_coin(
-        trader=daytrader,
-        token_name="PEPEUSDT",
-        interval=Intervals.DAY
-    )
-    print_values_for_a_coin(
-        trader=daytrader,
-        token_name="AVAXUSDT",
-        interval=Intervals.DAY
-    )
-    print_values_for_a_coin(
-        trader=daytrader,
-        token_name="TRXUSDT",
-        interval=Intervals.DAY
-    )
+    while True:
+        try:
+            BTCUSDT_RSI = daytrader.rsi(token_name="BTCUSDT", interval=Intervals.DAY)
+            if BTCUSDT_RSI < 35:
+                print("long", BTCUSDT_RSI)
+            elif BTCUSDT_RSI > 65:
+                print("short", BTCUSDT_RSI)
+            else:
+                print("hold", BTCUSDT_RSI)
+        except KeyboardInterrupt:
+            break
+        except Exception as e: 
+            pass
 
 if __name__ == "__main__":
     main() # run main 

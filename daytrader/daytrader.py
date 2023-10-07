@@ -29,7 +29,7 @@ class Daytrader:
             j = r.json()
 
             if j.get("status"):
-                return j.get("realTimeRsi")
+                return float(j.get("realTimeRsi"))
             else:
                 raise Exception("A problem occured")
 
@@ -53,7 +53,7 @@ class Daytrader:
             j: dict = r.json()
 
             if j.get("status"):
-                return j.get("realTimeMacd")
+                return float(j.get("realTimeMacd"))
             else:
                 raise Exception("A problem occured")
 
@@ -77,7 +77,7 @@ class Daytrader:
             j: dict = r.json()
 
             if j.get("status"):
-                return j.get("realTimeCci")
+                return float(j.get("realTimeCci"))
             else:
                 raise Exception("A problem occured")
 
@@ -101,7 +101,7 @@ class Daytrader:
             j: dict = r.json()
 
             if j.get("status"):
-                return j.get("realTimeAdl")
+                return float(j.get("realTimeAdl"))
             else:
                 raise Exception("A problem occured")
 
@@ -125,7 +125,7 @@ class Daytrader:
             j: dict = r.json()
 
             if j.get("status"):
-                return j.get("realTimeFi")
+                return float(j.get("realTimeFi"))
             else:
                 raise Exception("A problem occured")
 
@@ -149,7 +149,7 @@ class Daytrader:
             j: dict = r.json()
 
             if j.get("status"):
-                return j.get("realTimeAtr")
+                return float(j.get("realTimeAtr"))
             else:
                 raise Exception("A problem occured")
 
@@ -173,7 +173,7 @@ class Daytrader:
             j: dict = r.json()
 
             if j.get("status"):
-                return j.get("realTimeTrix")
+                return float(j.get("realTimeTrix"))
             else:
                 raise Exception("A problem occured")
 
@@ -197,7 +197,7 @@ class Daytrader:
             j: dict = r.json()
 
             if j.get("status"):
-                return j.get("realTimeObv")
+                return float(j.get("realTimeObv"))
             else:
                 raise Exception("A problem occured")
 
@@ -221,7 +221,7 @@ class Daytrader:
             j: dict = r.json()
 
             if j.get("status"):
-                return j.get("realTimeStochasticKst")
+                return float(j.get("realTimeStochasticKst"))
             else:
                 raise Exception("A problem occured")
 
@@ -246,7 +246,7 @@ class Daytrader:
             j: dict = r.json()
 
             if j.get("status"):
-                return j.get("realTimeVwap")
+                return float(j.get("realTimeVwap"))
             else:
                 raise Exception("A problem occured")
 
@@ -271,7 +271,7 @@ class Daytrader:
             j: dict = r.json()
 
             if j.get("status"):
-                return j.get("realTimeSma")
+                return float(j.get("realTimeSma"))
             else:
                 raise Exception("A problem occured")
 
@@ -296,7 +296,7 @@ class Daytrader:
             j: dict = r.json()
 
             if j.get("status"):
-                return j.get("realTimeEma")
+                return float(j.get("realTimeEma"))
             else:
                 raise Exception("A problem occured")
 
