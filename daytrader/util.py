@@ -17,10 +17,13 @@ class Url(Enum):
     EMA_URL = f"{BASE_URL}/ema"
 
 class Intervals(Enum):
-    MONTH = "1M"
-    WEEK = "1w"
-    DAY = "1d"
-    MINUTE = "1m"
+    MONTH = "1M" # 1 month
+    WEEK = "1w" # 1 week
+    DAY = "1d" # 1 day
+    MINUTE = "1m" # 1 minute
+    SIXHOURS = "6h" # 6 hours
+    TWOHOURS = "2h" # 2 hours
+    THREEHOURS = "3h" # 3 hours
     
 
 class CreateUrl:

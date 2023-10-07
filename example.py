@@ -17,7 +17,7 @@ def main():
 
     while True:
         try:
-            BTCUSDT_RSI = daytrader.rsi(token_name="BTCUSDT", interval=Intervals.DAY)
+            BTCUSDT_RSI = daytrader.rsi(token_name="BTCUSDT", interval=Intervals.MINUTE)
             if BTCUSDT_RSI < 35:
                 print("long", BTCUSDT_RSI)
             elif BTCUSDT_RSI > 65:
