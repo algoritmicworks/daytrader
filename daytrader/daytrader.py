@@ -7,9 +7,9 @@ from .util import *
 
 REQUEST_TIMEOUT = 10
 
-class Algotrader:
+class Daytrader:
     def __init__(self, access_token: str):
-        if access_token == None: raise Exception("Algotrader needs a access token to work!")
+        if access_token == None: raise Exception("Daytrader needs a access token to work!")
         self.access_token = access_token
     
     def rsi(
