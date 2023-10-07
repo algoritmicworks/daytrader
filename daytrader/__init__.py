@@ -1,2 +1,2 @@
-from algotrader.algotrader import *
-from algotrader.util import *
+from daytrader.daytrader import *
+from daytrader.util import *
