@@ -1,7 +1,7 @@
 from enum import Enum
 
 class Url(Enum):
-    BASE_URL = "http://localhost:3000/api/v1"
+    BASE_URL = "http://13.53.214.72/api/v1" # currently private
 
     RSI_URL = f"{BASE_URL}/rsi"
     MACD_URL = f"{BASE_URL}/macd"
