@@ -1,6 +1,5 @@
 from daytrader import *
 
-
 def print_values_for_a_coin(trader: Daytrader, token_name: str, interval: Intervals) -> None:
     print(token_name, "| vwap: ", trader.vwap(token_name=token_name, interval=interval))
     print(token_name, "| adl: ", trader.adl(token_name=token_name, interval=interval))
@@ -14,20 +13,33 @@ def print_values_for_a_coin(trader: Daytrader, token_name: str, interval: Interv
     print(token_name, "| obv: ", trader.obv(token_name=token_name, interval=interval))
 
 def main():
-    algotrader = Daytrader(access_token="1337")
+    daytrader = Daytrader(access_token="1337") # create a instance of class Daytrader and put access_token to the class which we gave
+
     print_values_for_a_coin(
-        trader=algotrader,
+        trader=daytrader,
         token_name="BTCUSDT",
         interval=Intervals.DAY
     )
     print_values_for_a_coin(
-        trader=algotrader,
+        trader=daytrader,
         token_name="LUNAUSDT",
         interval=Intervals.DAY
     )
     print_values_for_a_coin(
-        trader=algotrader,
+        trader=daytrader,
         token_name="PEPEUSDT",
         interval=Intervals.DAY
     )
-main()
+    print_values_for_a_coin(
+        trader=daytrader,
+        token_name="AVAXUSDT",
+        interval=Intervals.DAY
+    )
+    print_values_for_a_coin(
+        trader=daytrader,
+        token_name="TRXUSDT",
+        interval=Intervals.DAY
+    )
+
+if __name__ == "__main__":
+    main() # run main 
