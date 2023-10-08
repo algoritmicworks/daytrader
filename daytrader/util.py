@@ -20,6 +20,7 @@ class Intervals(Enum):
     MONTH = "1M" # 1 month
     WEEK = "1w" # 1 week
     DAY = "1d" # 1 day
+    HOUR = "1h" # 1 day
     MINUTE = "1m" # 1 minute
     SIXHOURS = "6h" # 6 hours
     TWOHOURS = "2h" # 2 hours
